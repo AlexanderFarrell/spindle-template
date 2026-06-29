@@ -1,8 +1,8 @@
 {
-	"name": "3d-rpg-in-typescript",
+	"name": "your-game-here",
 	"private": true,
 	"workspaces": [
-		"engine",
+		"spindle",
 		"game"
 	],
 	"scripts": {

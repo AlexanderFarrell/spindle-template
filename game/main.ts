@@ -1,12 +1,10 @@
-import type { Stage } from "engine/app/stage";
-import { PlayStage } from "./play/play";
-import { MenuStage } from "./menu/menu";
-import { Engine } from "engine";
+import type { Stage } from "spindle/app/stage";
+import { Engine } from "spindle";
 import "./assets/style.css";
+import { GameplayStage } from "./gameplay/gameplay";
 
 let stages: Stage[] = [
-    new PlayStage(),
-    new MenuStage()
+    new GameplayStage()
 ];
 
-Engine.start(stages, 'Menu');
+Engine.start(stages, 'Gameplay');

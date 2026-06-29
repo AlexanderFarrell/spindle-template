@@ -1,5 +1,5 @@
 {
-    "name": "walk-on-planets",
+    "name": "game-name-here",
     "private": true,
     "version": "1.0.0",
     "type": "module",
@@ -12,10 +12,11 @@
 		"build:desktop:win": "electron-vite build && electron-builder --win",
 		"build:desktop:wine": "electron-vite build && electron-builder --win portable",
 		"build:desktop:mac": "electron-vite build && electron-builder --mac",
-		"build:desktop:linux": "electron-vite build && electron-builder --linux"
+		"build:desktop:linux": "electron-vite build && electron-builder --linux",
+		"postinstall": "node -e \"require('electron')\""
 	},
 	"dependencies": {
-		"engine": "file:../spindle",
+		"spindle": "file:../spindle",
 		"vite": "7.3.2",
 		"electron-vite": "5.0.0"
 	},
@@ -25,8 +26,8 @@
 		"electron-builder": "26.8.1"
 	},
 	"build": {
-		"appId": "com.alexanderfarrell.walkonplanetsremake",
-		"productName": "3D RPG in TypeScript",
+		"appId": "com.yourname.gamenamehere",
+		"productName": "Game Name Here",
 		"files": [
 			"out/**",
 			"package.json"
